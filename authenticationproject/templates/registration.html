@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block body_block %}
+<div class="container">
+    <h1>hi register here</h1>
+    <form method="post" align="center">
+       {{ form.as_p }}
+        {% csrf_token %}
+       <input type="submit" class="btn btn-success" value="registration">
+
+    </form>
+
+</div>
+{% endblock %}
+
